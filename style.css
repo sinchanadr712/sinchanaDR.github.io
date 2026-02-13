@@ -240,6 +240,11 @@ section {
 }
 
 
+.home-buttons a:first-child {
+    margin-left: 15px;
+}
+
+
 /* Skills */
 .skills-container {
     display: grid;
