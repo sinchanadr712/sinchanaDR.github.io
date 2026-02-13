@@ -44,16 +44,145 @@ section {
 
 
 /* Home Section */
+/* ================== HOME DESIGN ================== */
+
 .home {
-    height: 90vh;
-    background: linear-gradient(to right, #00adb5, #393e46);
+    min-height: 100vh;
+    background: linear-gradient(135deg, #00adb5, #222831);
     color: white;
 
     display: flex;
-    justify-content: center;
     align-items: center;
-    text-align: center;
+    justify-content: center;
+
+    padding: 40px 10%;
 }
+
+.home-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    width: 100%;
+    max-width: 1100px;
+
+    gap: 50px;
+}
+
+/* Text Area */
+
+.home-text {
+    max-width: 550px;
+}
+
+.home-text h1 {
+    font-size: 3rem;
+    margin-bottom: 10px;
+}
+
+.home-text span {
+    color: yellow;
+}
+
+.home-text h3 {
+    font-size: 1.4rem;
+    color: #eeeeee;
+    margin-bottom: 15px;
+}
+
+.home-text p {
+    font-size: 1.05rem;
+    line-height: 1.6;
+    opacity: 0.9;
+    margin-bottom: 25px;
+}
+
+/* Buttons */
+
+.home-buttons {
+    display: flex;
+    gap: 15px;
+}
+
+.btn-primary,
+.btn-secondary {
+    padding: 10px 25px;
+    border-radius: 25px;
+
+    text-decoration: none;
+    font-weight: 500;
+
+    transition: 0.3s;
+}
+
+/* Primary Button */
+.btn-primary {
+    background: white;
+    color: #222;
+}
+
+.btn-primary:hover {
+    background: black;
+    color: white;
+}
+
+/* Secondary Button */
+.btn-secondary {
+    border: 2px solid white;
+    color: white;
+    background: transparent;
+}
+
+.btn-secondary:hover {
+    background: white;
+    color: #222;
+}
+
+/* Image Area */
+
+.home-image {
+    display: flex;
+    justify-content: center;
+}
+
+.profile-pic {
+    width: 230px;
+    height: 230px;
+
+    border-radius: 50%;
+    object-fit: cover;
+
+    border: 5px solid white;
+
+    box-shadow: 0 12px 30px rgba(0,0,0,0.4);
+}
+
+/* ============ MOBILE RESPONSIVE ============ */
+
+@media (max-width: 768px) {
+
+    .home-wrapper {
+        flex-direction: column-reverse;
+        text-align: center;
+    }
+
+    .home-text h1 {
+        font-size: 2.3rem;
+    }
+
+    .home-buttons {
+        justify-content: center;
+    }
+
+    .profile-pic {
+        width: 170px;
+        height: 170px;
+    }
+}
+
+
+
+
 
 /* Home Content */
 .home-content {
@@ -119,13 +248,38 @@ section {
 }
 
 /* Projects */
+
+/* Project Cards */
+
 .project {
-    background: #eee;
-    margin: 20px auto;
-    padding: 20px;
-    width: 60%;
-    border-radius: 8px;
+    background: white;
+
+    margin: 25px auto;
+    padding: 25px;
+
+    width: 65%;
+    max-width: 800px;
+
+    border-radius: 12px;
+
+    box-shadow: 0 6px 18px rgba(0,0,0,0.15);
+
+    transition: 0.3s;
 }
+
+.project:hover {
+    transform: translateY(-8px);
+}
+
+
+
+
+
+
+
+
+
+
 
 /* Contact */
 form {
