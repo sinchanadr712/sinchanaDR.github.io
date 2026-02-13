@@ -41,33 +41,67 @@ section {
 }
 
 /* Home */
+
+
+/* Home Section */
 .home {
     height: 90vh;
     background: linear-gradient(to right, #00adb5, #393e46);
     color: white;
 
     display: flex;
-    flex-direction: column;
     justify-content: center;
-}
-
-.home {
+    align-items: center;
     text-align: center;
 }
+
+/* Home Content */
+.home-content {
+    max-width: 600px;
+}
+
 
 
 .home span {
     color: yellow;
 }
 
-.home button {
-    margin-top: 20px;
+
+
+/* Home Text */
+.home h1 {
+    font-size: 2.8rem;
+    margin-bottom: 10px;
+}
+
+.home p {
+    font-size: 1.1rem;
+    margin-bottom: 20px;
+    opacity: 0.9;
+}
+
+
+/* Home Buttons */
+.home a {
+    display: inline-block;
+    margin: 10px 10px 0;
+
     padding: 10px 25px;
-    border: none;
+    border-radius: 25px;
+
     background: black;
     color: white;
-    cursor: pointer;
+    text-decoration: none;
+
+    font-weight: 500;
+    transition: 0.3s;
 }
+
+.home a:hover {
+    background: white;
+    color: black;
+}
+
 
 /* Skills */
 .skills-container {
@@ -115,13 +149,17 @@ form button {
 }
 
 /* Profile Image Style */
+/* Profile Image */
 .profile-pic {
-    width: 160px;
-    height: 160px;
-    border-radius: 50%;   /* Makes it round */
+    width: 180px;
+    height: 180px;
+    border-radius: 50%;
     object-fit: cover;
-    border: 3px solid #333;
-    margin-bottom: 15px;
+
+    border: 4px solid white;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.3);
+
+    margin-bottom: 20px;
 }
 
 
