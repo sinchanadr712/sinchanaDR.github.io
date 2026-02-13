@@ -51,6 +51,11 @@ section {
     justify-content: center;
 }
 
+.home {
+    text-align: center;
+}
+
+
 .home span {
     color: yellow;
 }
