@@ -109,6 +109,17 @@ form button {
     width: 100%;
 }
 
+/* Profile Image Style */
+.profile-pic {
+    width: 160px;
+    height: 160px;
+    border-radius: 50%;   /* Makes it round */
+    object-fit: cover;
+    border: 3px solid #333;
+    margin-bottom: 15px;
+}
+
+
 /* Footer */
 footer {
     background: #222;
