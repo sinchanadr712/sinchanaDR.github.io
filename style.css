@@ -145,6 +145,15 @@ section {
     border: 2px solid rgba(255,255,255,0.7);
 }
 
+/* Secondary Buttons (GitHub, LinkedIn, Download) */
+
+.btn-secondary {
+    background: rgba(255, 255, 255, 0.15);   /* Soft white background */
+    color: white;
+
+    border: 2px solid white;
+}
+
 .btn-secondary:hover {
     background: white;
     color: #222;
