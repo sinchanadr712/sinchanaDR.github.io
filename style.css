@@ -108,39 +108,48 @@ section {
 }
 
 
+/* Buttons */
+
 .btn-primary,
 .btn-secondary {
-    padding: 10px 25px;
+    padding: 10px 22px;
     border-radius: 25px;
 
     text-decoration: none;
     font-weight: 500;
+    font-size: 14px;
 
-    transition: 0.3s;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+
+    transition: 0.3s ease;
 }
 
 /* Primary Button */
 .btn-primary {
-    background: white;
+    background: #ffd369;
     color: #222;
+    border: none;
 }
 
 .btn-primary:hover {
-    background: black;
-    color: white;
+    background: #ffca2c;
 }
 
 /* Secondary Button */
 .btn-secondary {
-    border: 2px solid white;
-    color: white;
     background: transparent;
+    color: white;
+
+    border: 2px solid rgba(255,255,255,0.7);
 }
 
 .btn-secondary:hover {
     background: white;
     color: #222;
 }
+
 
 /* Image Area */
 
@@ -149,17 +158,7 @@ section {
     justify-content: center;
 }
 
-.profile-pic {
-    width: 230px;
-    height: 230px;
 
-    border-radius: 50%;
-    object-fit: cover;
-
-    border: 5px solid white;
-
-    box-shadow: 0 12px 30px rgba(0,0,0,0.4);
-}
 
 /* ============ MOBILE RESPONSIVE ============ */
 
@@ -174,18 +173,10 @@ section {
         font-size: 2.3rem;
     }
 
-  .home-buttons {
-    display: flex;
-    gap: 15px;
-
-    margin-left: 20px;   /* Moves buttons slightly to the right */
-}
 
 
-    .profile-pic {
-        width: 170px;
-        height: 170px;
-    }
+
+    .
 }
 
 
@@ -219,25 +210,17 @@ section {
 
 
 /* Home Buttons */
-.home a {
-    display: inline-block;
-    margin: 10px 10px 0;
+/* Home Action Buttons */
 
-    padding: 10px 25px;
-    border-radius: 25px;
+.home-buttons {
+    display: flex;
+    align-items: center;
 
-    background: black;
-    color: white;
-    text-decoration: none;
+    gap: 15px;
 
-    font-weight: 500;
-    transition: 0.3s;
+    margin-top: 20px;
 }
 
-.home a:hover {
-    background: white;
-    color: black;
-}
 
 
 .home-buttons a:first-child {
@@ -259,6 +242,12 @@ section {
     padding: 15px;
     border-radius: 5px;
 }
+
+.home-buttons {
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
 
 /* Projects */
 
